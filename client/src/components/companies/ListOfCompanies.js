@@ -7,8 +7,15 @@ import CompanyCard from './CompanyCard';
 // Create a loop, that will create many company cards
 class ListOfCompanies extends Component {
   render() {
-    console.log('Something else:   ', this.props.companyListArray);
     const arr = [];
+    console.log(
+      'This is companyListArray in listOfCompanies: ',
+      this.props.companyListArray
+    );
+    console.log(
+      'This is localStorage in listofCompanies:  ',
+      localStorage.companyListArray
+    );
     for (let i = 0; i < this.props.companyListArray.length; i += 1) {
       arr.push(
         <CompanyCard key={i} companyName={this.props.companyListArray[i]} />

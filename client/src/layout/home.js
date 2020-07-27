@@ -110,8 +110,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = (props) => {
   // Setting up Material UI Styling
-  console.log(props)
-
+  console.log(props);
 
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
@@ -123,8 +122,6 @@ const Home = (props) => {
   };
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
   console.log('This is companyListArray:   ', props.companyListArray);
-  // const ListOfCompanies = () => {
-  //   return <div></div>;
   // };
 
   const [formData, setFormData] = useState({
@@ -162,16 +159,16 @@ const Home = (props) => {
           >
             Dashboard
           </Typography>
-          <Link to = "login">
-          <Typography
-            component="h1"
-            variant="h6"
-            color="inherit"
-            noWrap
-            className={classes.title}
-          >
-            Login
-          </Typography>
+          <Link to="login">
+            <Typography
+              component="h1"
+              variant="h6"
+              color="inherit"
+              noWrap
+              className={classes.title}
+            >
+              Login
+            </Typography>
           </Link>
         </Toolbar>
       </AppBar>
